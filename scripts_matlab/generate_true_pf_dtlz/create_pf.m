@@ -1,19 +1,11 @@
 function create_pf( )
-objs = [10, 15];
-%minimum = 5000;
-divs = [6, 5];
-
-% for i = 1:numel(objs)
-%     div = 1;
-%     while nchoosek(objs(i)+div-1, div) < minimum
-%         div = div + 1;
-%     end
-%     disp(['objs:', num2str(objs(i)), ', div:', num2str(div), ',count:', num2str(nchoosek(objs(i)+div-1, div))]);
-% end
-
-f = @dtlz7;
+%objs = [10, 15];
+%divs = [6,6;5,4]; % two layers for generating reference weights
+objs = [8];
+divs = [9];
+f = @dtlz1;
 for i = 1:numel(objs)
-    f(divs(i), objs(i));
+    f(divs(i,:), objs(i));
 end
 
 
