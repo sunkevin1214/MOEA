@@ -36,8 +36,7 @@ void dtlz6(int M, const float * X, float *objs) {
 
 	float *theta = (float *)malloc((M - 1)*sizeof(float));
 	theta[0] = X[0] * M_PI / 2;
-	theta[1] = X[1] * M_PI / 2;
-	for (int i = 2; i < (M - 1); i++) {
+	for (int i = 1; i < (M - 1); i++) {
 		theta[i] = t*(1.0 + 2.0*g*X[i])*M_PI / 2;
 	}
 	for (int i = 0; i < M; i++) {
@@ -67,8 +66,7 @@ void dtlz5(int M, const float * X, float *objs) {
 
 	float *theta = (float *)malloc((M - 1)*sizeof(float));
 	theta[0] = X[0] * M_PI / 2;
-	theta[1] = X[1] * M_PI / 2;
-	for (int i = 2; i < (M - 1); i++) {
+	for (int i = 1; i < (M - 1); i++) {
 		theta[i] = t*(1.0 + 2.0*g*X[i])*M_PI / 2;
 	}
 	for (int i = 0; i < M; i++) {
