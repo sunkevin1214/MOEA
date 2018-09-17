@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="decision.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test_main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="estimate_var.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="reference_point.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="individual.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="problem_DTLZ.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="nondominated_sort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="comparator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="environmental_selection.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wfg\ExampleProblems.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wfg\ExampleShapes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wfg\ExampleTransitions.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wfg\FrameworkFunctions.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wfg\ShapeFunctions.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wfg\TransFunctions.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wfg\Misc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="decision.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="estimate_var.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="reference_point.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="population.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="individual.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="problem_base.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="problem_DTLZ.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nondominated_sort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="comparator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="environmental_selection.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="wfg\ExampleProblems.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="wfg\ExampleShapes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="wfg\ExampleTransitions.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="wfg\FrameworkFunctions.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="wfg\ShapeFunctions.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="wfg\TransFunctions.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="wfg\Misc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="explist.ini">
+      <Filter>源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{51AA2E71-081D-4CA5-922A-C1A5FB0B6D85}</ProjectGuid>
+    <RootNamespace>MY_ALG</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="comparator.cpp" />
+    <ClCompile Include="decision.cpp" />
+    <ClCompile Include="environmental_selection.cpp" />
+    <ClCompile Include="estimate_var.cpp" />
+    <ClCompile Include="individual.cpp" />
+    <ClCompile Include="nondominated_sort.cpp" />
+    <ClCompile Include="problem_DTLZ.cpp" />
+    <ClCompile Include="reference_point.cpp" />
+    <ClCompile Include="test_main.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="wfg\ExampleProblems.cpp" />
+    <ClCompile Include="wfg\ExampleShapes.cpp" />
+    <ClCompile Include="wfg\ExampleTransitions.cpp" />
+    <ClCompile Include="wfg\FrameworkFunctions.cpp" />
+    <ClCompile Include="wfg\Misc.cpp" />
+    <ClCompile Include="wfg\ShapeFunctions.cpp" />
+    <ClCompile Include="wfg\TransFunctions.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="comparator.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="decision.h" />
+    <ClInclude Include="environmental_selection.h" />
+    <ClInclude Include="estimate_var.h" />
+    <ClInclude Include="individual.h" />
+    <ClInclude Include="nondominated_sort.h" />
+    <ClInclude Include="population.h" />
+    <ClInclude Include="problem_base.h" />
+    <ClInclude Include="problem_DTLZ.h" />
+    <ClInclude Include="reference_point.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="wfg\ExampleProblems.h" />
+    <ClInclude Include="wfg\ExampleShapes.h" />
+    <ClInclude Include="wfg\ExampleTransitions.h" />
+    <ClInclude Include="wfg\FrameworkFunctions.h" />
+    <ClInclude Include="wfg\Misc.h" />
+    <ClInclude Include="wfg\ShapeFunctions.h" />
+    <ClInclude Include="wfg\TransFunctions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="explist.ini" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
